@@ -1,0 +1,43 @@
+.collapse{
+    cursor: pointer;
+    display: block;
+    background: #cdf;
+  }
+  .collapse + input{
+    display: none; /* hide the checkboxes */
+  }
+  .collapse + input + div{
+    display:none;
+  }
+  .collapse + input:checked + div{
+    display:block;
+  }
+
+
+
+   
+
+.selectsize{
+    max-width: 10px;
+    font-size: 5px;
+    height: 20px;
+    padding: 2px 5px;
+}
+
+.selectsize1{
+    max-width: 150px;
+   font-size: 10px;
+}
+
+.selectwidthauto
+{
+     width:auto !important;
+}
+
+.fontsize{
+     font-size: 10px;
+}
+
+.fonttable{
+  font-size: 13px;
+}

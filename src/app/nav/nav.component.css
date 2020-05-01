@@ -1,0 +1,26 @@
+img{
+    width: 100%;
+    height: 500px;
+}
+
+.dropdown-menu{
+background-color: #ff2821;
+}
+
+.dropdown-menu > a:hover, .dropdown-menu > li > a:focus {
+    background-color:#ff3333;
+    color: lightgoldenrodyellow;
+}
+
+.dropdown-item{
+    background-color: #ff2821;
+}
+
+.textwhite{
+    color:white ;
+}    
+
+.ngbDropdownItem{ width:100% !important;}
+
+
+ 

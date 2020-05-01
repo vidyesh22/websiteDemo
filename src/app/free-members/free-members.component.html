@@ -1,0 +1,402 @@
+<div class="">
+  <app-nav></app-nav>
+</div>
+
+
+<div class="container-fluid d-none d-lg-block d-xl-none d-xl-block">
+  <h1 class="text-center " style="color: #fa7a75; margin-bottom: 40px; margin-top: 40px;">Premium Members</h1>
+  <div class="row">
+    <div class="col-4">
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">I'M LOOKING FOR A</label>
+        <select class="form-control">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="row ">
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="text-center ">
+        <div class="form-group">
+          <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="30" id="example-number-input">
+          </div>
+        </div>
+      </div>
+      <div class=" text-center ">
+        <div class="form-group">
+          <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="30" id="example-number-input">
+          </div>
+        </div>
+      </div>
+      <div class="ext-center ">
+        <div class="form-group">
+          <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="30" id="example-number-input">
+          </div>
+        </div>
+      </div>
+      <div class="text-center ">
+        <div class="form-group">
+          <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="30" id="example-number-input">
+          </div>
+        </div>
+      </div>
+      <div class="text-center ">
+        <div class="form-group">
+          <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="30" id="example-number-input">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      <div class="row ">
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label class="form-check-label" for="inlineRadio2">Member Type</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">All Members</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Free Members</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Premium Members</label>
+      </div>
+      <div class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
+        <button type="button" class="btn btn-success">Success</button>
+      </div>
+      <div class="border-bottom">
+        <span class="border-bottom"></span>
+      </div>
+    </div>
+    <div class="col-8 ">
+      <div class="row d-none d-lg-block d-md-block d-xl-none d-xl-block ml-2 mr-2 ">
+        <div class=" card p-0  mx-auto " *ngFor="let member of premiumMembers; " style="width: auto;">
+          <div class="row">
+            <div class="col-4 ">
+              <img [src]="member.image" class="mx-auto" alt="image slide"
+                style="display: block; width: 70%; height: 200px">
+              <div class=" text-center mt-2 mb-2">
+                <button type="button" class="btn btn-outline-success text-center">Full Profile</button>
+              </div>
+            </div>
+            <div class="col-8 ">
+              <div class="card-body mt-2 mb-2 ">
+                <h5 class="card-title text-center">{{member.name}}</h5>
+                <h5 class="fonttable">{{member.profession}}</h5>
+
+                <table class="table table-hover">
+                  <tbody>
+                    <tr>
+                      <th class="fonttable" scope="row">Age</th>
+                      <td class="fonttable">{{member.name}}</td>
+                      <th class="fonttable">Height</th>
+                      <td class="fonttable">{{member.height}}</td>
+                    </tr>
+                    <tr>
+                      <th class="fonttable" scope="row">Mother Tounge</th>
+                      <td class="fonttable">{{member.MotherTounge}}</td>
+                      <th class="fonttable">Location</th>
+                      <td class="fonttable">{{member.height}}</td>
+                    </tr>
+
+                    <tr>
+                      <th class="fonttable" scope="row fonttable">Caste</th>
+                      <td class="fonttable">{{member.caste}}</td>
+                      <th class="fonttable">Marital Status</th>
+                      <td class="fonttable">{{member.MaritalStatus}}</td>
+                    </tr>
+                    <tr>
+                      <th class="fonttable" scope="row fonttable">Religion</th>
+                      <td class="fonttable">{{member.religion}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" mx-auto" style="margin-left: 70px;">
+        <nav aria-label="Page navigation example mx-auto" style="margin-left: 300px;">
+          <ul class="pagination text-center mx-auto">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+
+            <li *ngFor="let i of total let in = index " class="page-item">
+              <a class="page-link" (click)='updatePagination(in)'>{{in+1}}</a></li>
+
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <label class="collapse" for="_1">Collapse 1</label>
+  <input id="_1" type="checkbox"> 
+  <div>Content 1</div>
+  
+  <label class="collapse" for="_2">Collapse 2</label>
+  <input id="_2" type="checkbox">
+  <div>Content 2</div> -->
+
+<div class="container-fluid d-block d-sm-none">
+  <h1 class="text-center mt-2 " style="color: #fa7a75; margin-bottom: 40px; font-size: 30px;">Premium Members</h1>
+  <label class="collapse text-center" for="_1" style="margin-bottom:50px;">Advance Search</label>
+  <input id="_1" type="checkbox">
+  <div class="">
+    <div class="col">
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">I'M LOOKING FOR A</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Male</option>
+          <option class="selectsize1">Female</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED FROM</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">AGED TO</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Member Id</label>
+        <input type="text" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">Marital Status</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Never Married</option>
+          <option class="selectsize1">Married</option>
+          <option class="selectsize1">Divorced</option>
+          <option class="selectsize1">Separated</option>
+          <option class="selectsize1">Widowed</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">Religion</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Choose</option>
+          <option class="selectsize1">Judaism</option>
+          <option class="selectsize1">Christianty</option>
+          <option class="selectsize1">Hinduism</option>
+          <option class="selectsize1">Buddhism</option>
+          <option class="selectsize1">Atheism</option>
+          <option class="selectsize1">Islam</option>
+          <option class="selectsize1">Shikism</option>
+          <option class="selectsize1">Jain</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">Caste/Sect</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Judiasm</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">Sub-Caste</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Male</option>
+          <option class="selectsize1">Female</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <label for="example-number-input" class=" col-form-label">Mother Tounge</label>
+        <select class="form-control mx-auto selectsize1">
+          <option class="selectsize1">Male</option>
+          <option class="selectsize1">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      <div class="row ">
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">Min Height</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-6 text-center ">
+          <div class="form-group">
+            <label for="example-number-input" class=" col-form-label mr-4">Max Height</label>
+            <div class="col-10">
+              <input class="form-control" type="number" value="30" id="example-number-input">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label class="form-check-label" for="inlineRadio2">Members types</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">All Members</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Free Members</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Premium Members</label>
+      </div>
+      <div class="text-center" style="margin-top: 40px; margin-bottom: 40px;">
+        <button type="button" class="btn btn-success">Success</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="row ">
+      <div class=" card p-0  mx-auto " *ngFor="let member of premiumMembers; " style="width: auto;">
+        <div class="row">
+          <div class="col ">
+            <img class="mx-auto" [src]="member.image" alt="image slide"
+              style="display: block; width: 50%; height: 200px">
+            <div class=" text-center mt-2 mb-2 ">
+              <button type="button" class="btn btn-outline-success">Full Profile</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-body mt-2 mb-2 ">
+              <h5 class="card-title text-center fonttable">{{member.name}}</h5>
+              <h5 class="fonttable">{{member.profession}}</h5>
+
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th class="fonttable" scope="row">Age</th>
+                    <td class="fonttable">{{member.name}}</td>
+                    <th class="fonttable">Height</th>
+                    <td class="fonttable">{{member.height}}</td>
+                  </tr>
+                  <tr>
+                    <th class="fonttable" scope="row">Mother Tounge</th>
+                    <td class="fonttable">{{member.MotherTounge}}</td>
+                    <th class="fonttable">Location</th>
+                    <td class="fonttable">{{member.height}}</td>
+                  </tr>
+
+                  <tr>
+                    <th class="fonttable" scope="row">Caste</th>
+                    <td class="fonttable">{{member.caste}}</td>
+                    <th class="fonttable" scope="row">Religion</th>
+                    <td class="fonttable">{{member.religion}}</td>
+
+                  </tr>
+                  <tr>
+                    <th class="fonttable">Marital Status</th>
+                    <td class="fonttable">{{member.MaritalStatus}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" mx-auto">
+      <nav aria-label="Page navigation example mx-auto">
+        <ul class="pagination text-center mx-auto">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li *ngFor="let i of total let in = index " class="page-item">
+            <a class="page-link" (click)='updatePagination(in)'>{{in+1}}</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+     
+              <li *ngFor ="let i of getArrayFromNumber(members.length); let in = index " class="page-item">
+              <a class="page-link" href="#">{{in+1}}</a></li>
+     
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav> -->
+
+</div>
+
+<div>
+  <app-footer></app-footer>
+</div>
